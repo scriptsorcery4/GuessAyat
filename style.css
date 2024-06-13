@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+@media screen and (max-width: 500px) {
+    section header h1{
+        font-size: 1.5rem;
+    }
+    section header div a svg{
+        width: 1.7rem;
+    }
+    section .started h1{
+        font-size: 2rem;
+    }
+    section .started p{
+        font-size: 1rem;
+    }
+    section #ayat_ar{
+        font-size: 1.5rem;
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Rubik", sans-serif;
+}
+
+body{
+    background-color: #dad7cd;
+}
+
+
+
+a{
+    text-decoration: none;
+}
+
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    width: 100%;
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a img{
+    width: 3rem;
+}
+
+header a h1{
+    color: #344e41;
+    font-weight: 900;
+    font-size: 1.7rem;
+}
+
+header a{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+header div{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+header div a svg{
+    width: 2rem;
+    transition: all 2.2ms ease-in;
+}
+
+header div a:hover{
+    opacity: 80%;
+    scale: 103%;
+}
+
+section main{
+    margin-top: 8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.started h1{ 
+    color: #283618;
+    font-weight: 900;
+    font-size: 2.3rem;
+    max-width: 42rem;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.started p{
+    text-align: center;
+    margin: 2rem 0;
+    max-width: 42rem;
+    padding: 0 1rem;
+    font-size: 1.1rem;
+}
+
+.started div{
+    display: flex;
+    gap: 1rem;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.fill-btn{
+    padding: 0.5rem 1.4rem;
+    background-color: #283618;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    animation-name: example;
+    animation-duration: 0.5s;
+    transition: all 0.10s ease-in;
+}
+
+.fill-btn:hover{
+    opacity: 90%;
+}
+
+.outline-btn{
+    padding: 0.5rem 1.4rem;
+    color: #283618;
+    background-color: transparent;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    border: 1.2px solid #283618;
+    display: flex;
+    width: fit-content;
+    gap: 0.5rem;
+    align-items: center;
+    animation-name: example;
+    animation-duration: 0.5s;
+    transition: all 0.15s ease-in;
+}
+
+.outline-btn svg{
+    width: 1.5rem;
+}
+
+@keyframes example {
+    from {
+        opacity: 0%;
+        scale: 55%;
+    }
+    to {
+        opacity: 100%;
+        scale: 100%;
+    }
+  }
+
+.outline-btn span{
+    width: fit-content;
+}
+
+.outline-btn:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+footer{
+    width: 100%;
+}
+
+footer div{
+    display: flex;
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 1rem;
+    justify-content: center;
+}
+
+footer div p a{
+    color: #283618;
+    font-weight: 600;
+    transition: all 2.4ms ease-in;
+}
+
+footer div p a:hover{
+    text-decoration: underline;
+}
+
+.app{
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.app_top{
+    margin-top: 2rem;
+   position: relative;
+   display: flex;
+    flex-direction: column;
+    gap: 1rem;    
+}
+
+.ayat{
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+#ayat_ar{
+    font-size: 1.8rem;
+    text-align: right;
+    line-height: 2.8rem;
+}
+
+#ayat_en{
+    margin-top: 1rem;
+    text-align: left;
+    color: #545454;
+}
+
+.next_surah{
+    margin-top: -0.6rem;
+    margin-bottom: 0.8rem;
+     color: #000000;
+     font-weight: 600;
+     font-size: 0.9rem;
+     text-align: center;
+     cursor: pointer;
+    }
+    
+    .next_surah:hover{
+        text-decoration: underline;
+    }
+
+.grow{
+    flex-grow: 3;
+}
+
+.app_bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#audio-source{
+    width: 100%;
+    color: white;
+    padding: 0 0.1rem;
+}
+
+.app_bottom button{
+    padding: 0.7rem 1.4rem;
+    background-color: #283618;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.10s ease-in;
+}
+
+.app_bottom button:hover{
+    opacity: 90%;
+}
+
+.app_bottom div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.app_bottom div div{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    width: 49%;
+}
+
+.app_bottom div label{
+    margin-left: 0.2rem;
+}
+
+.app_bottom div input{
+    
+    height: 2.8rem;
+    border-radius: 0.5rem;
+    padding: 0 0.9rem;
+    border: none;
+}
+
+/* loader */
+
+#loading_en, #loading_ar{
+    background-color: #ededed;
+    background: linear-gradient(
+      100deg,
+      rgba(255, 255, 255, 0) 40%,
+      rgba(255, 255, 255, .5) 50%,
+      rgba(255, 255, 255, 0) 60%
+    ) #ededed;
+    background-size: 200% 100%;
+    background-position-x: 180%;
+    animation: 1s loading ease-in-out infinite;
+  }
+  
+  @keyframes loading {
+    to {
+      background-position-x: -20%;
+    }
+  }
+
+#loading_ar{
+    min-height: 3.2rem;
+    border-radius: 4px;
+    animation-delay: .05s;
+    margin-left: 6rem;
+}
+
+#loading_en{
+    min-height: 1.6rem;
+    border-radius: 4px;
+    animation-delay: .06s;
+    margin-right: 6rem;
+}
+
+/* modal */
+
+.modal{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal_wrapper{
+    width: 100%;
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.modal_bg{
+    background-color: white;
+    border-radius: 1rem;
+    border: 2px solid #ededed;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.modal_top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal_top h1{
+    color: #283618;
+    font-weight: 900;
+    font-size: 1.8rem;
+}
+
+.modal_top button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.modal_top button img{
+    width:  2rem;
+    height: 2rem;
+}
+
+.emoji{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    padding: 0.3rem;
+}
+
+.mess{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    padding: 1rem 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.mess h1{
+    font-weight: 900;
+    color: #283618;
+}
+
+.CTA{
+    display: flex;
+    gap: 0.8rem;
+    justify-content: center;
+    padding: 1rem 0;
+}
