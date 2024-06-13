@@ -16,6 +16,12 @@
     section #ayat_ar{
         font-size: 1.5rem;
     }
+    .modal_bg .mess h3{
+        font-size: 1.2rem;
+    }
+    .CTA a{
+        font-size: 1rem;
+    }
 }
 
 *{
@@ -28,8 +34,6 @@
 body{
     background-color: #dad7cd;
 }
-
-
 
 a{
     text-decoration: none;
@@ -406,9 +410,8 @@ footer div p a:hover{
     align-items: center;
 }
 
-.mess h1{
-    font-weight: 900;
-    color: #283618;
+.mess h3{
+    text-align: center;
 }
 
 .CTA{
