@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="public/icon.png" type="image/png">
+    <title>GuessAyat</title>
+</head>
+<body>
+    <div class="modal">
+        <div class="modal_wrapper">
+            <div class="modal_bg">
+                <div class="modal_top">
+                    <h1>YOUR RESULTS</h1>
+                    <button onclick="handleExit()">
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAABSUlEQVR4nO2aUQ6CMBBE5xePJZ4K/duEH08hegU5iAcSQ1ITYgwU2LbZdl7SP8PsTLcFKQAhhBBCCCGEELKWA4ALgB7AHUCN8Jyc1qh5BlAhofkXgGEy3gAkoKY4janmK1UIl59CpqMNoNfO6I2dEJ1+piDtEObMD66W6NwXihrHVantl3RuSED9Zz1qd8LSzH/3nSMSIR4Fbg3Bx/wQeNNVDeGa+JpBEcWCzZnXLNyseQ0D5s3vMZKN+bU7eLvyt6YQT2NZzXyIEMya1wjBvPk9IWRjfksI2ZlH6QFIyUtASt4EpeTboJT8ICQrjGX3P0A2GMomBNlhxHwIomDAbAiiWLi5ECRAwWZCkJJfi59KPxh5RGpRny7rkIA+4MybOBw9RzLvE0KDBFSlfyABJzx2wtOtw2OkU+nOaTYpzRNCCCGEEEIIgVE+FXRUtmFTkccAAAAASUVORK5CYII=">
+                    </button>
+                </div>
+                <div class="content">
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <header>
+            <a href="/index.html">
+                <img src="/public/icon.png" alt="">
+                <h1>GuessAyat</h1>  
+            </a>
+            
+            <div>
+                <a href="https://www.youtube.com/@scriptsorcery4" target="_blank">
+                    <svg viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2"><path d="M256 0c141.29 0 256 114.71 256 256 0 141.29-114.71 256-256 256C114.71 512 0 397.29 0 256 0 114.71 114.71 0 256 0Zm153.315 178.978c-3.68-13.769-14.522-24.61-28.29-28.29C356.067 144 256 144 256 144s-100.067 0-125.025 6.688c-13.765 3.68-24.61 14.521-28.29 28.29C96 203.933 96 256.002 96 256.002s0 52.067 6.685 77.02c3.68 13.769 14.525 24.614 28.29 28.293C155.933 368 256 368 256 368s100.067 0 125.025-6.685c13.768-3.679 24.61-14.524 28.29-28.293C416 308.069 416 256.002 416 256.002s0-52.069-6.685-77.024ZM223.999 304.003v-96.002l83.137 48.001-83.137 48.001Z" fill="#283618" class="fill-000000"></path></svg>
+                </a>
+                <a href="https://www.instagram.com/scriptsorcery4/" target="_blank">
+                    <svg data-name="Layer 1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M314.757 147.525H197.243a49.717 49.717 0 0 0-49.718 49.718v117.514a49.718 49.718 0 0 0 49.718 49.718h117.514a49.718 49.718 0 0 0 49.717-49.718V197.243a49.717 49.717 0 0 0-49.717-49.718ZM256 324.391A68.391 68.391 0 1 1 324.391 256 68.391 68.391 0 0 1 256 324.391Zm71.242-122.811a16.271 16.271 0 1 1 16.27-16.271 16.271 16.271 0 0 1-16.27 16.271Z" fill="#283618" class="fill-000000"></path><path d="M256 211.545A44.455 44.455 0 1 0 300.455 256 44.455 44.455 0 0 0 256 211.545Z" fill="#283618" class="fill-000000"></path><path d="M256 0C114.615 0 0 114.615 0 256s114.615 256 256 256 256-114.615 256-256S397.385 0 256 0Zm133.333 312.5a76.836 76.836 0 0 1-76.833 76.833h-113a76.837 76.837 0 0 1-76.834-76.833v-113a76.836 76.836 0 0 1 76.834-76.833h113a76.836 76.836 0 0 1 76.833 76.833Z" fill="#283618" class="fill-000000"></path></svg>
+                </a>
+                <a href="https://www.tiktok.com/@scriptsorcery4" target="_blank">
+                    <svg data-name="Layer 1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 0C114.615 0 0 114.615 0 256s114.615 256 256 256 256-114.615 256-256S397.385 0 256 0Zm129.62 232.382c-27.184 0-53.634-8.822-74-23.75l-.162 101.5a92.457 92.457 0 1 1-80.178-91.721v49.845a43.657 43.657 0 1 0 31.288 41.876V109.333h51.275a71.773 71.773 0 0 0 71.774 71.773Z" fill="#283618" class="fill-000000"></path></svg>
+                </a>
+            </div>
+        </header>
+      <div class="grow">
+            <div class="app">
+                <div class="app_top">
+                    <audio id="audio-source" controls autoplay>
+                        <source src="" type="audio/mpeg">
+                      Your browser does not support the audio element.
+                      </audio>
+                    <div class="ayat">
+                    <p id="ayat_ar"><div id="loading_ar"></div></p>
+                    <p id="ayat_en"><div id="loading_en"></div></p>
+                    </div>
+                </div>
+                <form class="app_bottom">
+                    <input id="cor" type="hidden">
+                    <div>
+                        <div>
+                            <label>Number of surah</label>
+                            <input id="numsurah" type="number" required min="1" max="114" placeholder="20">
+                        </div>
+                        <div>
+                            <label>Number of ayat</label>
+                            <input id="numayat" type="number" required min="1" max="286" placeholder="40">
+                        </div>                  
+                    </div>
+                  <button>GUESS</button>
+                  <a class="next_surah" href="/app.html">NEXT SURAH</a>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div>
+                <p>Build with &#9829; by <a href="">Scriptsorcery4</a> </p>
+            </div>
+        </footer>
+    </section>
+    <script src="/script.js"></script>
+</body>
+</html>
