@@ -30,7 +30,6 @@ function getRandomNumber(min, max) {
         en_c.remove();
         ar.innerHTML = data.data[0].text
         en.innerHTML = data.data[1].text
-        console.log(data)
       })
       .catch(error => {
         console.error('Error', error);
