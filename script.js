@@ -64,7 +64,7 @@ function checkData(event) {
                         <p>It is surah ${nsInput} ( ${nInput} ) and ayat ${naInput}</p>
                     </div>
                     <div class="CTA">
-                        <a href="/app" class="fill-btn">TRY AGAIN</a>
+                        <a href="/app.html" class="fill-btn">TRY AGAIN</a>
                         <a href="/" class="outline-btn">BACK TO HOME</a>
                     </div>`
     } else {
@@ -74,7 +74,7 @@ function checkData(event) {
          <p>It is surah ${nsInput} ( ${nInput} ) and ayat ${naInput}</p>
       </div>
       <div class="CTA">
-          <a href="/app" class="fill-btn">TRY AGAIN</a>
+          <a href="/app.html" class="fill-btn">TRY AGAIN</a>
           <a href="/" class="outline-btn">BACK TO HOME</a>
       </div>`
     }
