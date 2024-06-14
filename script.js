@@ -16,7 +16,7 @@ function fetchData() {
     .then(data => {
       
       const ranAyah = getRandomNumber(0, data.result.length-1);
-      console.log(data.result[ranAyah]);
+      
       let idd = 0
       if(randomAyahNumber === 1){
          idd = data.result[ranAyah].id
@@ -34,7 +34,7 @@ function fetchData() {
           return response.json();
         })
         .then(d => {
-          console.log(d.data)
+         
           let ar = document.querySelector('#ayat_ar');
           let en = document.querySelector('#ayat_en');
           let surahDataInput = document.querySelector('#cor');
