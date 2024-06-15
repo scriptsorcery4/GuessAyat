@@ -50,7 +50,7 @@ function fetchData() {
           ar_c.remove();
           en_c.remove();
           ar.innerHTML = d.data[0].text;
-          en.innerHTML = data.result[ranAyah].translation;
+          en.innerHTML = d.data[1].text;//data.result[ranAyah].translation;
 
         })
         .catch(error => {
