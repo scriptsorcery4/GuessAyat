@@ -58,8 +58,10 @@
                     <input id="cor" type="hidden">
                     <div>
                         <div>
-                            <label>Number of surah</label>
-                            <input id="numsurah" type="number" required min="1" max="114" placeholder="20">
+                            <label>Name of surah</label>
+                            <select id="numsurah" required>
+                                <option value="" disabled selected>Select a Surah</option>
+                            </select>
                         </div>
                         <div>
                             <label>Number of ayat</label>
@@ -77,6 +79,36 @@
             </div>
         </footer>
     </section>
+    <script>
+        const surahs = [
+            "Al-Fatiha", "Al-Baqarah", "Aal-E-Imran", "An-Nisa'", "Al-Ma'idah", "Al-An'am",
+            "Al-A'raf", "Al-Anfal", "At-Tawbah", "Yunus", "Hud", "Yusuf", "Ar-Ra'd", "Ibrahim",
+            "Al-Hijr", "An-Nahl", "Al-Isra", "Al-Kahf", "Maryam", "Ta-Ha", "Al-Anbiya", "Al-Hajj",
+            "Al-Mu'minun", "An-Nur", "Al-Furqan", "Ash-Shu'ara", "An-Naml", "Al-Qasas", "Al-Ankabut",
+            "Ar-Rum", "Luqman", "As-Sajda", "Al-Ahzab", "Saba", "Fatir", "Ya-Sin", "As-Saffat",
+            "Sad", "Az-Zumar", "Ghafir", "Fussilat", "Ash-Shura", "Az-Zukhruf", "Ad-Dukhan",
+            "Al-Jathiya", "Al-Ahqaf", "Muhammad", "Al-Fath", "Al-Hujurat", "Qaf", "Adh-Dhariyat",
+            "At-Tur", "An-Najm", "Al-Qamar", "Ar-Rahman", "Al-Waqi'a", "Al-Hadid", "Al-Mujadila",
+            "Al-Hashr", "Al-Mumtahina", "As-Saff", "Al-Jumu'a", "Al-Munafiqun", "At-Taghabun",
+            "At-Talaq", "At-Tahrim", "Al-Mulk", "Al-Qalam", "Al-Haqqah", "Al-Ma'arij", "Nuh",
+            "Al-Jinn", "Al-Muzzammil", "Al-Muddathir", "Al-Qiyama", "Al-Insan", "Al-Mursalat",
+            "An-Naba", "An-Nazi'at", "Abasa", "At-Takwir", "Al-Infitar", "Al-Mutaffifin",
+            "Al-Inshiqaq", "Al-Buruj", "At-Tariq", "Al-A'la", "Al-Ghashiya", "Al-Fajr", "Al-Balad",
+            "Ash-Shams", "Al-Lail", "Ad-Duhaa", "Ash-Sharh", "At-Tin", "Al-Alaq", "Al-Qadr",
+            "Al-Bayyina", "Az-Zalzala", "Al-Adiyat", "Al-Qari'a", "At-Takathur", "Al-Asr", "Al-Humaza",
+            "Al-Fil", "Quraish", "Al-Ma'un", "Al-Kawthar", "Al-Kafirun", "An-Nasr", "Al-Masad",
+            "Al-Ikhlas", "Al-Falaq", "An-Nas"
+        ];
+    
+        const numsurahSelect = document.getElementById("numsurah");
+    
+        surahs.forEach((surah, index) => {
+            const option = document.createElement("option");
+            option.value = index + 1; // Surah numbers start from 1
+            option.textContent = `${index + 1}. ${surah}`;
+            numsurahSelect.appendChild(option);
+        });
+    </script>
     <script src="/script.js"></script>
 </body>
 </html>

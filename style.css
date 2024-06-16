@@ -305,6 +305,13 @@ footer div p a:hover{
     border: none;
 }
 
+select{
+    height: 2.8rem;
+    border-radius: 0.5rem;
+    padding: 0 0.9rem;
+    border: none;
+}
+
 /* loader */
 
 #loading_en, #loading_ar{
